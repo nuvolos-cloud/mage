@@ -425,104 +425,104 @@ if(LGUI)
    textfontList = NULL;
 /*Define various size fonts*/ /*121108 extra () to avoid = vs == warning*/
 /*121108 using if with assignment to test existance of fonts*/ 
-if((tinyfont = XLoadQueryFont(dpy,"*helvetica-medium-r-*-80*")))
+if((tinyfont = XLoadQueryFont(dpy,"*fixed-medium-r-semicondensed--13-100-100-100*")))
 {
    tinyfontList = XmFontListCreate(tinyfont, XmSTRING_DEFAULT_CHARSET);
-   if(Lfontinfo) {fprintf(stderr,"tiny font *helvetica-medium-r-*-80*, %ld\n",(long)tinyfont);}
+   if(Lfontinfo) {fprintf(stderr,"tiny font *fixed-medium-r-semicondensed--13-100-100-100*, %ld\n",(long)tinyfont);}
 }
 
 /*define little font*/
 
-if((littlefont = XLoadQueryFont(dpy, "*helvetica-bold-r-*-120*") ))
+if((littlefont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     littlefontList = XmFontListCreate(littlefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"little font *helvetica-bold-r-*-120*, %ld\n",(long)littlefont);}
+   {fprintf(stderr,"little font *fixed-medium-r-semicondensed--13-100-100-100*, %ld\n",(long)littlefont);}
 }
-else if((littlefont = XLoadQueryFont(dpy, "*helvetica-bold-r-*-140*") ))
+else if((littlefont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     littlefontList = XmFontListCreate(littlefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"little font *helvetica-bold-r-*-140*, %ld\n",(long)littlefont);}
+   {fprintf(stderr,"little font *fixed-medium-r-semicondensed--13-100-100-100*, %ld\n",(long)littlefont);}
 }
-else if((littlefont = XLoadQueryFont(dpy, "-*-fixed-bold-r-normal--15*") ))
+else if((littlefont = XLoadQueryFont(dpy, "-*-fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     littlefontList = XmFontListCreate(littlefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"little font fixed-bold-r 15, %ld\n",(long)littlefont);}
+   {fprintf(stderr,"little font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)littlefont);}
 }
-else if((littlefont = XLoadQueryFont(dpy, "-*-fixed--r-normal--15*") ))
+else if((littlefont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     littlefontList = XmFontListCreate(littlefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"little font fixed--r 15, %ld\n",(long)littlefont);}
+   {fprintf(stderr,"little font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)littlefont);}
 }
 
 /*find medium font*/
 
-if((mediumfont = XLoadQueryFont(dpy, "*helvetica-bold-r-*-140*") ))
+if((mediumfont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     mediumfontList = XmFontListCreate(mediumfont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"medium font *helvetica-bold-r-*-140*, %ld\n",(long)mediumfont);}
+   {fprintf(stderr,"medium font *fixed-medium-r-semicondensed--13-100-100-100*, %ld\n",(long)mediumfont);}
 }
 else if(( mediumfont =
-       XLoadQueryFont(dpy, "-*-fixed-bold-r-normal--14*") ))
+       XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     mediumfontList = XmFontListCreate(mediumfont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"medium font fixed-bold-r-normal--14, %ld\n",(long)mediumfont);}
+   {fprintf(stderr,"medium font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)mediumfont);}
 }
 else if(( mediumfont =
-       XLoadQueryFont(dpy, "-*-fixed--r-normal--14*") ))
+       XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     mediumfontList = XmFontListCreate(mediumfont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"medium font fixed--r-normal--14, %ld\n",(long)mediumfont);}
+   {fprintf(stderr,"medium font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)mediumfont);}
 }
 
 /*find large font*/
 
-if((largefont = XLoadQueryFont(dpy, "*helvetica-bold-r-*-180*") ))
+if((largefont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     largefontList = XmFontListCreate(largefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"large font *helvetica-bold-r-*-180*, %ld\n",(long)largefont);}
+   {fprintf(stderr,"large font *fixed-medium-r-semicondensed--13-100-100-100*, %ld\n",(long)largefont);}
 }
 else if(( largefont =
-       XLoadQueryFont(dpy, "-*-fixed-bold-r-normal--18*") ))
+       XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     largefontList = XmFontListCreate(largefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"large font fixed-bold-r-normal--18, %ld\n",(long)largefont);}
+   {fprintf(stderr,"large font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)largefont);}
 }
 else if(( largefont =
-       XLoadQueryFont(dpy, "-*-fixed--r-normal--18*") ))
+       XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     largefontList = XmFontListCreate(largefont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"large font fixed--r-normal--18, %ld\n",(long)largefont);}
+   {fprintf(stderr,"large font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)largefont);}
 }
 
 /*find giant font*/
 
-if ((giantfont = XLoadQueryFont(dpy, "*helvetica-bold-r-*-240*") ))
+if ((giantfont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     giantfontList = XmFontListCreate(giantfont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"giant font *helvetica-bold-r-*-240*, %ld\n",(long)giantfont);}
+   {fprintf(stderr,"giant font *fixed-medium-r-semicondensed--13-100-100-100*, %ld\n",(long)giantfont);}
 }
-else if(( giantfont = XLoadQueryFont(dpy, "-*-fixed-bold-r-normal--24*") ))
+else if(( giantfont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     giantfontList = XmFontListCreate(giantfont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-    {fprintf(stderr,"giant font fixed-bold-r-normal--24, %ld\n",(long)giantfont);}
+    {fprintf(stderr,"giant font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)giantfont);}
 }
-else if(( giantfont = XLoadQueryFont(dpy, "-*-fixed--r-normal--24*") ))
+else if(( giantfont = XLoadQueryFont(dpy, "*fixed-medium-r-semicondensed--13-100-100-100*") ))
 {
     giantfontList = XmFontListCreate(giantfont, XmSTRING_DEFAULT_CHARSET);
    if(Lfontinfo)
-   {fprintf(stderr,"giant font fixed--r-normal--24, %ld\n",(long)giantfont);}
+   {fprintf(stderr,"giant font fixed-medium-r-semicondensed--13-100-100-100, %ld\n",(long)giantfont);}
 }
 
 /*test logic incomplete: presumes littlefont is most likely to be defined*/
